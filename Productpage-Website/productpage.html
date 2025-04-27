@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congressional Town Center Booking</title>
+    <link rel="stylesheet" href="stylesproduct.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class = "logo-container">
+            <a href="https://www.congressionaltowncenter.com/" class="logo-link">
+                <img src="images/Congressional-Town-Center-Logo.png" alt = "Congressional Town Center Logo">
+                <span class="logo-text">
+                    <span class="line1">CONGRESSIONAL</span><br>
+                    <span class="line2">TOWN CENTER</span>
+                </span>
+            </a>
+            <span class="divider">✖</span>
+            <a href="https://www.facebook.com/profile.php?id=100071155666501" class="logo-link">
+                <img src="images/BNB-Serenity-Camp-2508-Logo.jpg" alt = "BNB Serenity Camp Logo" class="round-logo">
+                <span class="logo-text">
+                    <span class="line1">BNB Serenity</span><br>
+                    <span class="line2 indent">Camp</span>
+                </span>
+            </a>
+        </div>
+
+    <!-- Centered Navigation Bar -->
+     <nav>
+        <ul>
+            <li><a href="../Homepage-Website/homepage.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Facilities and Amenities</a></li>
+        </ul>
+     </nav>
+
+     <!-- Right Section Navigation Bar (Cart, Login, Signup) -->
+     <div class="right-section"> <!-- previously "cart-login" -->
+        <div class="cart-container">
+            <button class="cart-btn">
+                <img src="images/White-Shopping-cart-icon.png" alt = "White Shopping Cart icon">
+                <span class="cart-count">1</span>
+            </button>
+        </div>
+        <a href="../Login-Website/loginpage.html" class="login">Log in</a>
+        |
+        <a href="../Registration-Website/registrationpage.html" class="signup">Sign up</a>
+    </div>
+    
+    <!-- Menu Icon for Mobile Web -->
+    <div class="menu-icon">
+        <img src = "images/Three-Horizontal-Lines-icon.png" alt = "Menu-icon">
+    </div>
+
+    <div class="cart-popup hidden" id="cartPopup">
+        <div class="cart-item">
+            <img src="images/Room-2508.jpg" alt="Room 2508" class="cart-img">
+            <div class="cart-details">
+                <h4>Room 2508</h4>
+                <p>Avg. price/night: ₱2,850.00</p>
+                <p><strong>9.9 Excellent</strong> - 1012 Reviews</p>
+                <p>Staycation · Kamp Zen<br>Studio Type</p>
+            </div>
+            <button class="delete-btn">🗑️</button>
+        </div>
+    <div class="cart-drop-zone">
+        <span>+</span>
+    </div>
+    </header>
+
+    <!-- Product Section -->
+             <section class="room-selection">
+
+            <!-- Room 1621 -->
+            <div class="product-card" draggable="true" data-product-id="1621">
+                <img src="images/Room-1621-merged.png" alt="Room 1621">
+                <div class="product-info">
+                    <div class="left-text">
+                        <h3>Room 1621</h3>
+                        <p class="subtext">Staycation : Stay Ligaya</p>
+                        <p class="subtext">Avg. price/night: ₱ 7,613.32</p>
+                        <p class="rating"><span class="score">7.9</span> Good - <span class="review-count">512 Reviews</span></p>
+                    </div>
+                    <div class="right-text">2 Bedroom</div>
+                    <button class="add-to-cart-button">Add to cart</button>
+                </div>
+            </div>
+        
+            <!-- Room 3015 -->
+            <div class="product-card" draggable="true" data-product-id="3015">
+                <img src="images/Room-3015.jpg" alt="Room 3015">
+                <div class="product-info">
+                    <div class="left-text">
+                        <h3>Room 3015</h3>
+                        <p class="subtext">Staycation : Stay Ligaya</p>
+                        <p class="subtext">Avg. price/night: ₱ 2,817.68</p>
+                        <p class="rating"><span class="score">8.9</span> Very Good - <span class="review-count">703 Reviews</span></p>
+                    </div>
+                    <div class="right-text">Studio Type</div>
+                    <button class="add-to-cart-button">Add to cart</button>
+                </div>
+            </div>
+        
+            <!-- Room 3019 -->
+            <div class="product-card" draggable="true" data-product-id="3019">
+                <img src="images/Room-3019.jpg" alt="Room 3019">
+                <div class="product-info">
+                    <div class="left-text">
+                        <h3>Room 3019</h3>
+                        <p class="subtext">Staycation : Stay Ligaya</p>
+                        <p class="subtext">Avg. price/night: ₱ 2,512.14</p>
+                        <p class="rating"><span class="score">7.2</span> Good - <span class="review-count">808 Reviews</span></p>
+                    </div>
+                    <div class="right-text">Studio Type</div>
+                    <button class="add-to-cart-button">Add to cart</button>
+                </div>
+            </div>
+        
+            <!-- Room 2616 -->
+            <div class="product-card" draggable="true" data-product-id="2616">
+                <img src="images/Room-2616.jpg" alt="Room 2616">
+                <div class="product-info">
+                    <div class="left-text">
+                        <h3>Room 2616</h3>
+                        <p class="subtext">Staycation : JNR's Studio</p>
+                        <p class="subtext">Avg. price/night: ₱ 2,713.50</p>
+                        <p class="rating"><span class="score">7.4</span> Good - <span class="review-count">406 Reviews</span></p>
+                    </div>
+                    <div class="right-text">Studio Type</div>
+                    <button class="add-to-cart-button">Add to cart</button>
+                </div>
+            </div>
+        
+            <!-- Room 2508 -->
+            <div class="product-card" draggable="true" data-product-id="2508 ">
+                <img src="images/Room-2508.jpg" alt="Room 2508">
+                <div class="product-info">
+                    <div class="left-text">
+                        <h3>Room 2508</h3>
+                        <p class="subtext">Staycation : Kamp Zen</p>
+                        <p class="subtext">Avg. price/night: ₱ 2,850.00</p>
+                        <p class="rating"><span class="score">9.9</span> Excellent - <span class="review-count">1,012 Reviews</span></p>
+                    </div>
+                    <div class="right-text">Studio Type</div>
+                    <button class="add-to-cart-button">Add to cart</button>
+                </div>
+            </div>
+        
+            <!-- Room 1615 -->
+            <div class="product-card" draggable="true" data-product-id="1615">
+                <img src="images/Room-1615.jpg" alt="Room 1615">
+                <div class="product-info">
+                    <div class="left-text">
+                        <h3>Room 1615</h3>
+                        <p class="subtext">Staycation : Suite Escape</p>
+                        <p class="subtext">Avg. price/night: ₱ 2,250.00</p>
+                        <p class="rating"><span class="score">6.6</span> Fair - <span class="review-count">350 Reviews</span></p>
+                    </div>
+                    <div class="right-text">1 Bedroom</div>
+                    <button class="add-to-cart-button">Add to cart</button>
+                </div>
+            </div>
+        </section>
+                
+     <!-- Congressional Town Center Footer -->
+    <footer>
+
+        <div class="Congressional-Town-Center">
+            <img src="images/Congressional-Town-Center-Logo-clear.png" alt="Congressional-Town-Center Logo Clear">
+            <p>Fill out the form, or call us to set up a free in-home consultation.</p>
+            <p><strong>Phone Number:</strong> 09985127056</p>
+            <p><strong>Email:</strong> <span class="underline">info@congressionaltowncenter.com</span></p>
+            <p><strong>Service Areas:</strong> 28 Congressional Ave., Brgy. Bahay Toro, Quezon City 1106, Metro Manila</p>
+        </div>
+
+        <div class="Contact-Us">
+            <h2><strong>Contact Us</strong></h2>
+            <form>
+             <input type="text" placeholder="First Name" class="input-field">
+             <input type="text" placeholder="Last Name" class="input-field">
+             <input type="email" placeholder="Email" class="input-field">
+             <textarea placeholder="Write a Message" class="input-field"></textarea>
+             <button type="submit" class="submit">Submit</button>
+            </form>
+        </div>
+
+    </footer>
+      <script src="shoppingcart.js"></script>
+
+</body>
+</html>

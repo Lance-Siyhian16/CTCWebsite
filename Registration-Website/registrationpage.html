@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congressional Town Center Registration</title>
+    <link rel="stylesheet" href="styleregistration.css">
+</head>
+    <body>
+        <!-- Navigation Bar -->
+    <header>
+        <div class = "logo-container">
+            <img src="images/Congressional-Town-Center-Logo.png" alt = "Congressional Town Center Logo">
+            <span class="divider">✖</span>
+            <img src="images/BNB-Serenity-Camp-2508-Logo.jpg" alt = "BNB Serenity Camp Logo">
+        </div>
+
+    <!-- Centered Navigation Bar -->
+     <nav>
+        <ul>
+            <li><a href="../Homepage-Website/homepage.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Facilities and Amenities</a></li>
+        </ul>
+     </nav>
+
+     <!-- Right Section Navigation Bar (Cart, Login, Signup) -->
+     <div class="right-section"> <!-- previously "cart-login" -->
+        <div class="cart-container">
+            <button class="cart-btn">
+                <img src="images/White-Shopping-cart-icon.png" alt = "White Shopping Cart icon">
+                <span class="cart-count">1</span>
+            </button>
+        </div>
+        <a href="../Login-Website/loginpage.html" class="login">Log in</a>
+        |
+        <a href="registrationpage.html" class="signup">Sign up</a>
+    </div>
+    
+    <!-- Menu Icon for Mobile Web -->
+    <div class="menu-icon">
+        <img src = "images/Three-Horizontal-Lines-icon.png" alt = "Menu-icon">
+    </div>
+
+    <div class="cart-popup hidden" id="cartPopup">
+        <div class="cart-item">
+            <img src="images/Room-2508.jpg" alt="Room 2508" class="cart-img">
+            <div class="cart-details">
+                <h4>Room 2508</h4>
+                <p>Avg. price/night: ₱2,850.00</p>
+                <p><strong>9.9 Excellent</strong> - 1012 Reviews</p>
+                <p>Staycation · Kamp Zen<br>Studio Type</p>
+            </div>
+            <button class="delete-btn">🗑️</button>
+        </div>
+    <div class="cart-drop-zone">
+        <span>+</span>
+    </div>
+    </header>
+
+     <!-- Body Main Container -->
+     <div class="container">
+        <!-- Left Side Container -->
+        <div class="left-side-contain">
+                <h2>Create Account</h2>
+
+            <form id="registrationForm">
+                    <label for="Full-name">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+
+                    <label for="Email-Address">Email Address</label>
+                    <input type="email" id="email" placeholder="thisuix@mail.com" required>
+
+                    <label for="password">Create Password</label>
+                    <input type="password" id="password" placeholder="************" required>
+                    
+                    <small class="subtitle">Password must be at least 8 characters, include 1 uppercase letter and 1 number.</small>
+
+                    <div id="strength-bar">
+                        <div id="strength-indicator"></div>
+                    </div>
+                    <p class="subtitle">Password Strength: <span id="strength-label"></span></p>
+
+                    <label for="confirmPassword">Confirm Password</label>
+                    
+                    <div class="password-match">
+                        <input type="password" id="confirmPassword" required>
+                        <span id="match-indicator">❌</span>
+                    </div>
+
+                    <p class="subtitle">Password Match: </p>
+
+
+                <div class="divider">- OR -</div>
+
+                <div class="icon-logo">
+                    <button type="button"><img src="images/Google-icon.png" alt="Google icon">Sign up with Google</button>
+                    <button type="button"><img src="images/Facebook-icon.png" alt="Facebook icon">Sign up with Facebook</button>
+                    <button type="button"><img src="images/Apple-icon.png" alt="Apple icon">Sign up with Apple</button>
+                </div>
+
+                <button type="submit" class="login-btn">Sign Up</button>
+
+                <p class="register-link">Already have an account? <a href="/Login-Website/loginpage.html">Login</a></p>
+            </form>
+        </div>
+
+        <!-- Right Side Container-->
+        <div class="right-side-contain">
+            <h2>BOOK DIRECT BENEFITS</h2>
+
+            <div class="text-content">
+            <ul>
+                <li><img src="images/Discount-icon.png" alt="Discount icon">Get more savings on our room accomodation</li>
+                <li><img src="images/Cocktail-icon.png" alt="Cocktail icon">Signature Welcome Drinks for 2 adults</li>
+                <li><img src="images/Bed-icon.png" alt="Bed icon">Free Pool Access and Complimentary use of day beds for 2 adults</li>
+            </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="registration.js"></script>
+      
+    </body>
+</html>

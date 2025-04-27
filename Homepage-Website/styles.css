@@ -1,0 +1,417 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: white;
+    color: white;
+    }
+    
+/* Header Navigation */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid black;
+    }
+    
+    .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    }
+    
+    .logo-container img {
+    height: 70px;
+    max-width: 120px; /* So the image doesn't expand the width limit */
+    object-fit: contain; /* Ensures aspect ratio is maintained */
+    }
+
+    .round-logo {
+        border-radius: 50%;
+      }
+    
+    .divider { /* | */
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    }
+    
+    nav {
+    flex-grow: 1;
+    text-align: center;
+    }
+    
+    nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    }
+    
+    nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    }
+
+.logo-container .logo-link:first-child {
+    font-family: Calibri, sans-serif;
+    color: #0c2a4d;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    max-width: 300px;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    word-break: break-word;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.logo-container .logo-link:last-child {
+    font-family: "Times New Roman", serif;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    max-width: 300px;
+    white-space: normal;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.logo-container .logo-link:last-child {
+    font-family: "Times New Roman", serif;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    max-width: 300px;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    word-break: break-word;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.logo-container .logo-link .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.logo-container .logo-link .line2.indent {
+    padding-left: 40px;
+}
+    
+    /* Keep cart, login, signup on the right */
+    .right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto; /* Pushes login & sign up to the right */
+    }
+    
+    /* Cart and Login */
+    .cart-container {
+    position: relative;
+    }
+    
+    .cart-btn { /* Shopping cart button */
+    background-color: #7ca70f;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+    }
+    
+    .cart-btn img { /* White Shopping cart icon */
+    width: 24px;
+    height: 24px;
+    }
+    
+    .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: white;
+    color: #7ca70f;
+    font-size: 14px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    /* Login and Signup */
+    .login, .signup {
+    text-decoration: underline;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    }
+    
+    /* 3 bar .menu-icon*/
+    .menu-icon{
+    display: none; /* Hide by default on larger screens /
+    cursor: pointer;
+    margin-left: 20px; / Ensures spacing from elements */
+    }
+    
+    .menu-icon img{
+    width: 30px;
+    height: 30px;
+    }
+
+     /* Keep cart, login, signup on the right */
+     .right-section {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-left: auto; /* Pushes login & sign up to the right */
+        }
+        
+        /* Cart and Login */
+        .cart-container {
+        position: relative;
+        }
+        
+        .cart-btn { /* Shopping cart button */
+        background-color: #7ca70f;
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        position: relative;
+        }
+        
+        .cart-btn img { /* White Shopping cart icon */
+        width: 24px;
+        height: 24px;
+        }
+        
+        .cart-count {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background-color: white;
+        color: #7ca70f;
+        font-size: 14px;
+        font-weight: bold;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+        /* Cart Popup */
+    .cart-popup {
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        width: 300px;
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+        border-radius: 10px;
+        padding: 15px;
+        z-index: 100;
+        }
+        
+        .cart-popup.hidden {
+        display: none;
+        }
+        
+        .cart-item {
+        display: flex;
+        gap: 10px;
+        align-items: start;
+        position: relative;
+        }
+        
+        .cart-img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 8px;
+        }
+        
+        .cart-details {
+        font-size: 13px;
+        color: black;
+        }
+        
+        .cart-details h4 {
+        margin: 0 0 5px;
+        font-size: 14px;
+        }
+        
+        .delete-btn {
+        position:absolute;
+        top: 5px;
+        right: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        }
+        
+        /* Cart Drop Zone */
+        .cart-drop-zone {
+        border: 2px dashed #7ca70f;
+        border-radius: 10px;
+        height: 100px;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        color: #7ca70f;
+        cursor: pointer;
+        }
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book-now {
+    position: absolute;
+    z-index: 100; /* This moves forward the book now in front. */
+    bottom: 200px;
+    right: 20px;
+    background-color: #002147;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.book-now a {
+    color: white;
+    text-decoration: none;
+}
+
+.book-now img {
+    width: 20px;
+    height: auto;
+}
+
+.book-now:hover {
+    background-color: #0044cc; /*Lighter blue*/
+}
+
+/* Cookie Consent */
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+}
+
+.cookie-consent p {
+    font-size: 14px;
+    color: black;
+}
+
+.cookie-consent a {
+    text-decoration: underline;
+    color: black;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.settings, .accept {
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.accept{
+    margin-right: 50px;
+}
+
+.settings {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.accept {
+    background-color: black;
+    color: white;
+}
+
+/* Mobile Responsive Homepage*/
+@media (max-width: 768px) { /* */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul :active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block; /*Show menu icon on mobile */
+        cursor: pointer;
+    }
+    
+    .menu-icon img {
+        width: 35px;
+    }
+}

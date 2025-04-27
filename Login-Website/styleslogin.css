@@ -1,0 +1,213 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container Layout */
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Left Side */
+.left-side-body {
+  width: 50%;
+  position: relative;
+  background: black;
+}
+
+.left-side-body img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-content {
+  position: absolute;
+  top: 50px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 80%;
+}
+
+.text-content h2 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.text-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Right Side */
+.right-side-body {
+  width: 50%;
+  background-color: #fff;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Top Icons */
+.top-icons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Login Form */
+.text-form {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.text-form h1 {
+  font-size: 36px;
+  color: #7ca70f;
+}
+
+.text-form label {
+  justify-content: right;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.input-box img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+}
+
+.login-btn {
+  background-color: #7ca70f;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  width: 100%;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.forgot-password {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #7ca70f;
+  text-decoration: none;
+}
+
+/* Divider */
+.divider {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #aaa;
+  text-align: center;
+}
+
+/* Social Icons */
+.icon-logo {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+/* Social Buttons */
+.icon-logo button {
+  width: 200px;
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.icon-logo button img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.icon-logo button :hover {
+  background-color: #f0f0f0;
+}
+
+/* Register Link */
+.register-link {
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.register-link a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Footer Logos */
+.right-side-footer-body {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  right: 30px;
+}
+
+.right-side-footer-body img {
+  width: 50px;
+  height: auto;
+}
